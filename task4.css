@@ -1,0 +1,35 @@
+.container{
+    display: grid;
+    /* grid-auto-flow: column; */
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    gap: 10px;
+    justify-content: start;
+    padding: 20px;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.box1, .box3, .box5, .box7 {
+    background-color: rgb(50, 66, 66);
+    color: white;
+}
+
+.box2, .box4, .box6, .box8 {
+    background-color: lightgray;
+}
+
+.box1{
+    grid-column: span 1;
+    grid-row: 2 / span 1;
+}
+.box2{
+    grid-column: span 1;
+    grid-row: 2 / span 1;
+}

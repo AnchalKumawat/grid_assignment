@@ -1,0 +1,14 @@
+.container{
+border: 2px solid red;
+display: grid;
+grid-template-columns: auto auto;
+justify-items: start;
+
+}
+
+.box {
+    background-color: lightgreen;
+    border: 1px solid black;
+    justify-self: flex-end; /*comment out this to see the effect of justify-items: start in .container to work */
+    
+}

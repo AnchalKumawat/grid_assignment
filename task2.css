@@ -1,0 +1,35 @@
+.container{
+    display: grid;
+/* padding: 5px; */
+grid-template-areas: "A A B"
+"C D B";
+grid-template-rows: 100px 100px;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 10px 10px;
+
+}
+
+div{
+   
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    
+}
+
+.A{
+    grid-area: A;
+    background-color: rgb(254, 209, 216);
+}
+.B{
+    grid-area: B;
+    background-color: rgb(254, 209, 216);
+}
+.C{
+    grid-area: C;
+    background-color: rgb(254, 209, 216);
+}
+.D{
+    grid-area: D;
+    background-color: rgb(254, 209, 216);
+}
